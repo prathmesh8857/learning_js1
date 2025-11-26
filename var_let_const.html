@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+        var fname = "prathmesh";//global scope
+        var fname = "yash";//reassign
+        fname = "sawrav";//re-declare
+        document.write(fname);
+
+        let lname = "butte";//functional or block scope
+        //let lname = "shinde"; //reassigh not allowed
+        lname = "waghole";//re-decleared
+        document.write(lname);
+
+        const cname = "TCS";//functional or block scope
+        // cons" cname ="Cognizant";//re assigh not allowed
+        //cname = "FCT";
+        document.write(cname);
+
+         document.write("<br>");
+
+
+    </script>
+        <script>
+        function example(){
+            var x = 1;//function scope
+            let y = 2;//bloack scope
+            const z = 3;//bloack scope
+            if(true){
+                var x = 10;//reassign
+                let y = 20;//bloack scope
+                const z = 30;//bloack scope
+                document.write("x :" + x +"<br>");
+                document.write("y :" + y +"<br>");//
+                document.write("z :" + z +"<br><br>");//10 20 30
+            }
+            document.write("x :" + x +"<br>");
+                document.write("y :" + y +"<br>");
+                document.write("z :" + z +"<br><br>");//10 2 3
+        }
+        
+    </script>
+    <script src="js/script.js" type="text/Javascript"></script>
+    </body>
+</html>

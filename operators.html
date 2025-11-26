@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //arithmatic operatios +,-,/,--,++,%
+
+        var a=10;
+        var b=13;
+        var c=a+b;
+        var d=a-b;
+
+        c++;
+        c--;
+        c++;
+        c++;
+        c++;
+        c--;
+        document.write(c+ "<br>");
+        document.write(d);
+        
+    </script>
+    <hr>
+    <script>
+
+        // assignment operator//
+
+        var x=10;
+
+        var y=5;
+
+        //x = x + y//
+        x+=y;
+        document.write(x + "<br>");
+        document.write(y + "<br>");
+    </script>
+    <script>
+
+        //comparison operator <,>,<=,>=,==,!=,===//
+        var p = 25;
+        var q = "25";
+        if(p===q){
+            document.write("Its true");
+        }else{document.write("Its false")}
+        
+
+
+    </script>
+    <hr>
+
+    <script>
+
+        //logical operator &&,||,!
+        var age = 18;
+        if(age>=18 && age<=100){
+            document.write("eligibal for vote")
+        }else{
+            document.write("Not eligibal for vote")
+        }
+
+        document.write("<br>");
+
+        var day="sunday";
+        if(day === "saturday" || day === "sunday"){
+            document.write("Its Weekend")
+        }else{
+            document.write("Its Weekdays")
+        }
+
+
+    </script>
+    <hr>
+    <script>
+        var myage = 18;
+        let elegibility = (myage>=18) ? "Eligibal for vie" : "Not eligible";
+        document.write(elegibility);
+    </script>
+</body>
+</html>
