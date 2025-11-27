@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <form class="myform">
+              <h1>Calculator</h1>
+              <label for="exampleFormControlInput1" class="form-label"
+                >Number 1:
+              </label>
+              <input
+                type="number"
+                name="num1"
+                class="form-control mb-3"
+                id="num1"
+                placeholder="Enter Number 1"
+              />
+              <label for="exampleFormControlInput1" class="form-label"
+                >Number 2:
+              </label>
+              <input
+                type="number"
+                name="num2"
+                class="form-control mb-3"
+                id="num2"
+                placeholder="Enter Number 2"
+              />
+              <div class="col-md-12">
+                <button type="button" class="btn btn-danger" onclick="sum()">
+                  +
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  onclick="subtract()"
+                >
+                  -
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  onclick="multiply()"
+                >
+                  *
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  onclick="division()"
+                >
+                  /
+                </button>
+              </div>
+              <div class="col-md-12 mt-4">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Result:
+                </label>
+                <p name="result" class="form-control mb-3" id="result">
+                  Result
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      let a, b, result;
+      function sum() {
+        a = Number(document.getElementById("num1").value);
+        b = Number(document.getElementById("num2").value);
+
+        result = a + b;
+        console.log(a + b);
+        document.getElementById("result").innerHTML = result;
+      }
+      function subtract() {
+        a = Number(document.getElementById("num1").value);
+        b = Number(document.getElementById("num2").value);
+
+        result = a - b;
+        console.log(a - b);
+        document.getElementById("result").innerHTML = result;
+      }
+      function multiply() {
+        a = Number(document.getElementById("num1").value);
+        b = Number(document.getElementById("num2").value);
+
+        result = a * b;
+        console.log(a * b);
+        document.getElementById("result").innerHTML = result;
+      }
+      function division() {
+        a = Number(document.getElementById("num1").value);
+        b = Number(document.getElementById("num2").value);
+
+        result = a / b;
+        console.log(a / b);
+        document.getElementById("result").innerHTML = result;
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
