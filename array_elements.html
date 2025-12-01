@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //modify or update and delete
+
+        var a = ["prathmesh",21,"male","Computer Engineer"];
+        document.write(a + "<br>");
+
+        a[1]=28;
+        document.write(a + "<br>");
+        delete a[3];
+        document.write(a + "<br>");
+    </script>
+    <script>
+        //sorting and reverse
+        var a = ["Ram","Sham","Srishna","Yash","Bhushan","Lokesh","Nagesh"];
+        document.write(a + "<br>");
+        a.sort();
+        document.write(a + "<br>");
+        a.reverse();
+        document.write(a + "<br>");
+    </script>
+    <script>
+        document.write("<h2>push pop example</h2>");
+        var a = ["Ram","Sham","Srishna","Yash","Bhushan","Lokesh","Nagesh"];
+        document.write(a + "<br>");
+        a.pop();
+        a.pop();
+        document.write(a + "<br>");
+        a.push("keshav");
+        a.push("arjun");
+        a.push("suraj");
+        document.write(a + "<br>");
+    </script>
+    <script>
+        document.write("<h2>shift pop unshift</h2>");
+        var a = ["Ram","Sham","Srishna","Yash","Bhushan","Lokesh","Nagesh"];
+        document.write(a + "<br>");
+        a.shift();
+        a.shift();
+        document.write(a + "<br>");
+        a.unshift("apurva");
+        a.unshift("sanika");
+        document.write(a + "<br>");
+    </script>
+    <script>
+         document.write("<h2>Concat and joind</h2>");
+        var a = ["Ram","Sham","Srishna","Yash","Bhushan","Lokesh","Nagesh"];
+        var b = ["shrinath","shreyash","sunny","omkar","sanket","rudra","shree"];
+        var x = ["lekhit","anushka"];
+
+        var c = a.concat(b);
+        document.write(c + "<br>");
+        var d = c.joint("/");
+        document.write(d + "<br>");
+
+    </script>
+</body>
+</html>
