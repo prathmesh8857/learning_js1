@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- example 1 -->
+     <h1>Change tect using DOM</h1>
+     <h2 id="title">Old heading</h2>
+     <button onclick="changeText()">changeText</button>
+     <hr>
+     <!-- example 2 -->
+     <h1>change style color using DOM</h1>
+     <h2 id="msg">hellow ita Prathmesh</h2>
+     <button onclick="changecolor()">change color</button>
+     <hr>
+     <h1>Change Image Using DOM</h1>
+     <img src="images/cactus-9902128_1280.jpg" id="myimg" width="300"/>
+     <button onclick="changeimage()">change image</button>
+     <hr>
+     <h1>Input from user</h1>
+     <input type="text" id="nameinput" placeholder="Enter name"/>
+     <button onclick="showname()">submit</button>
+     <h1 style="color: red;" id="output"></h1>
+     <hr>
+     <h1>increase and decrease text</h1>
+     <p id="paral">Change my font size</p>
+     <button onclick="increase()">+</button>
+     <button onclick="decrease()">-</button>
+     <hr>
+     <button onclick="toggletheme()">toggletheme</button>
+     <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima quos deleniti eius culpa esse repudiandae rerum dolores facilis accusantium nostrum fugit sed sapiente officia sequi, quod doloribus sunt nulla veritatis!</h2>
+     <style>
+        body{
+            background-color: white;
+            color: black;
+            transition: 0.5s;
+        }
+        .dark-mode{
+            background-color: black;
+            color: white;
+        }
+     </style>
+     <script>
+        function toggletheme(){
+            document.body.classList.toggle("dark-mode");
+        }
+     </script>
+     <script>
+        let size=16;
+
+        function increase(){
+            size++;
+            document.getElementById('paral').style.fontSize =size + 'px';
+        }
+
+         function decrease(){
+            size--;
+            document.getElementById('paral').style.fontSize =size  + 'px';
+        }
+     </script>
+
+
+     <script>
+        function showname(){
+            let name = document.getElementById('nameinput').value;
+
+            document.getElementById('output').innerHTML='its me ' + name;
+        }
+     </script>
+
+     <script>
+        function changeimage(){
+            document.getElementById('myimg').src ='images/aircraft-9927406_1280.jpg';
+        }
+     </script>
+
+
+     <script>
+        function changecolor(){
+            document.getElementById('msg').style.color='blue'
+        }
+     </script>
+
+     <script>
+        function changeText(){
+            document.getElementById('title').innerHTML='new heading'
+        }
+     </script>
+</body>
+</html>
